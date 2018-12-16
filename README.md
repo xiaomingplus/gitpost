@@ -1,63 +1,38 @@
-# 项目名
+# Gitpost
 
-项目简介
+> 所有能用 git 管理的东西最终都会用 git 来管理
+
+用 git 来管理你所有的文章。让各个平台的文章，帖子都用 git 来管理起来，你只需要在你的 git 项目里提交一个``markdown`文件,即可按照你的配置，自动同步到[medium](https://medium.com/),或[twitter](https://twitter.com/),或[tumblr](https://www.tumblr.com)等
 
 ## 特性
 
-特性简介
+- 自动同步新文章和修改到各个平台
+- 自动生成静态博客
+- 使用 git 来管理你全部的文章
 
-- 特性 1
-- 特性 2
-
-## 如何修改本项目为你自己的项目
-
-```shell
-git clone https://github.com/xiaomingplus/npm-typescript-boilerplate.git your-project-name
-cd your-project-name
-# 安装依赖
-tnpm i
-# 开始开发
-npm start
-# 修改 package.json 里面的项目名和简介
-# 修改 README.md 文件内容
-# 修改 远程仓库的地址
-git remote set-url origin your-git-url
-```
-
-## 如何安装
-
-(修改为你自己的：
+## 本地预览博客
 
 ```shell
-tnpm i @tencent/typescript-boilerplate
+npm i -g gitpost-cli
+gitpost init <folder>
+cd <folder>
+npm i
+gitpost server
 ```
 
-## 如何使用
+新建完成后，指定文件夹的目录如下：
 
-(修改为你自己的
+```sh
+_config.yaml
+package.json
+source/
+.hexo/ # 存放静态博客相关内容
 
-```typescript
-import { Greeter } from '@tencent/typescript-boilerplate'
-
-const str = Greeter('Bob')
-console.log('str', str)
 ```
-
-## API
-
-(修改为你自己的
-
-这里列出所有的 API，如果有很多的话，建议这里只写索引，具体的参数信息可以导航到 doc 目录下的文件
 
 ## 如何开发
 
-(修改为你自己的
-
 ```shell
-git clone https://github.com/xiaomingplus/npm-typescript-boilerplate.git
-cd typescript-boilerplate/
-git checkout develop
-git checkout -b feature/some-feature
 npm install
 npm start
 ```
@@ -70,15 +45,4 @@ npm start
 
 ```shell
 npm run cm
-```
-
-### 如何打包发布
-
-(修改为你自己的
-
-```shell
-cd npm-typescript-boilerplate
-# 自动打tag和生成changelog,并修改package.json
-npm run release
-npm publish
 ```
