@@ -5,14 +5,16 @@
 import publish from "../publish";
 import { NotSupportedException } from "../errors";
 import { IJob } from "../common-types";
-function consumer() {
-    const queues = [
-        {
-            provider: "medium"
-        }
-    ];
-    const job = queues[0];
-    doJob(job);
+const queues = [
+    {
+        provider: "medium"
+    }
+];
+export function consumer() {
+    queues.forEach(async queue => {
+        const job = queue;
+        await doJob(job);
+    });
 }
 
 function doJob(job: IJob) {
