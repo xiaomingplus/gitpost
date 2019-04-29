@@ -2,7 +2,9 @@
 
 > 所有能用 git 管理的东西最终都会用 git 来管理
 
-用 git 来管理你所有的文章。让各个平台的文章，帖子都用 git 来管理起来，你只需要在你的 git 项目里提交一个``markdown`文件,即可按照你的配置，自动同步到[medium](https://medium.com/),或[twitter](https://twitter.com/),或[tumblr](https://www.tumblr.com)等
+**项目正在进行中...还未完成**
+
+用 git 来管理你所有的文章。让各个平台的文章，帖子都用 git 来管理起来，你只需要在你的 git 项目里提交一个`markdown`文件,即可按照你的配置，自动同步到[medium](https://medium.com/),或[twitter](https://twitter.com/),或[tumblr](https://www.tumblr.com)等
 
 ## 特性
 
